@@ -230,13 +230,7 @@
           <br>
           <div class="content has-text-centered">
             <div class="thumbnail-container" id="thumbnail-qualitative">
-              <!-- <img src="resources/qualitative/college.png" data-glb="resources/qualitative/college_v2.glb"> -->
-              <!-- <video src="resources/qualitative/pyramid.mp4" data-glb="resources/qualitative/pyramid.glb" loop playsinline muted></video> -->
-              <video src="resources/qualitative/colosseum.mp4" data-glb="resources/qualitative/colosseum_v4.glb" loop playsinline muted></video>
-              <video src="resources/qualitative/outdoor_room.mp4" data-glb="resources/qualitative/outdoor_room_v2.glb" loop playsinline muted></video>
-              <video src="resources/qualitative/courtroom.mp4" data-glb="resources/qualitative/courtroom_v2.glb" loop playsinline muted></video>
-              <img src="resources/qualitative/chess.jpg" data-glb="resources/qualitative/chess_v2.glb">
-              <img src="resources/qualitative/indoor.jpg" data-glb="resources/qualitative/indoor_v2.glb">
+              <img src="resources/qualitative/mangrove.mp4" data-glb="assets/figures/mangrove.glb" loop playsinline muted></img>
             </div>
           </div>
           <style>
@@ -353,65 +347,6 @@
           </script>
 
           <br>
-
-          <h2 class="title is-4" style="font-weight: 700;">Qualitative Comparison</h2>
-          <div class="content has-text-justified" style="align-self: flex-start;">
-            <p>
-               VGGT significantly outperforms all other methods across various tasks. Please refer to our paper for quantitative results. Here we also provide a qualitative comparison with DUSt3R and other concurrent works such as Fast3R and FLARE (use the dropdown menu to switch).
-            </p>
-          </div>
-
-
-          <div class="model-container" id="model-compare-wrapper">
-            <!-- Model 1 Viewer with Label -->
-            <div class="model-wrapper-comparison">
-              <div class="model-label">VGGT</div>
-              <model-viewer id="modelViewerComparison1" loading="eager"
-                touch-action="pan-y" environment-image="legacy"
-                src="resources/comparison/ours/college.glb"
-                zoom-sensitivity="0.2" camera-controls disable-tap min-camera-orbit="auto auto 1m"
-                max-camera-orbit="auto auto 10m" interaction-prompt="none" shadow-intensity="0" ar
-                style="width: 100%; height: 100%;  background: #ffffff;">
-              </model-viewer>
-            </div>
-            <!-- Model 2 Viewer with Label -->
-            <div class="model-wrapper-comparison">
-              <div class="model-label">DUSt3R</div>
-              <model-viewer id="modelViewerComparison2"loading="eager"
-                touch-action="pan-y" environment-image="legacy"
-                src="resources/comparison/dust3r/college.glb"
-                zoom-sensitivity="0.2" camera-controls disable-tap min-camera-orbit="auto auto 1m"
-                max-camera-orbit="auto auto 10m" interaction-prompt="none" shadow-intensity="0" ar
-                style="width: 100%; height: 100%; background: #ffffff;">
-              </model-viewer>
-            </div>
-            <!-- Model 3 Viewer with Label -->
-            <div class="model-wrapper-comparison">
-              <select id="comparisonBaselineSelection" class="dropdown model-label">
-                <option value="fast3r">Fast3R</option>
-                <option value="flare">FLARE</option>
-                <!-- <option value="cut3r">CUT3R</option> -->
-              </select>
-              <model-viewer id="modelViewerComparison3" loading="eager"
-                touch-action="pan-y" environment-image="legacy"
-                src="resources/comparison/fast3r/college.glb"
-                zoom-sensitivity="0.2" camera-controls disable-tap min-camera-orbit="auto auto 1m"
-                max-camera-orbit="auto auto 10m" interaction-prompt="none" shadow-intensity="0" ar
-                style="width: 100%; height: 100%; background: #ffffff;">
-              </model-viewer>
-            </div>
-          </div>
-          <div class="hero-body" style="padding: 0;">
-            <div class="content has-text-centered">
-              <div class="thumbnail-container", id="thumbnail-comparison", data-selected-name="Colosseum">
-                <img src="resources/comparison/assets/college.png" name="college">
-                <img src="resources/comparison/assets/oil.png" name="oil">
-                <video src="resources/comparison/assets/fern.mp4" name="fern" loop playsinline muted></video>
-                <video src="resources/comparison/assets/pyramid.mp4" name="pyramid" loop playsinline muted></video>
-              </div>
-            </div>
-          </div>
-
 
         </div>
       </div>
